@@ -6,10 +6,10 @@ let newGame:Game;
 // add click handler to the start game button
 document.getElementById('startGame')!.addEventListener('click', () => {
     let player: Player = new Player();
-    player.name = utility.getInputValue('playername');
+    player.name = Utility.getInputValue('playername');
 
-    let problemCount: number = Number(utility.getInputValue('problemCount'));
-    let factor: number = Number(utility.getInputValue('factor'));
+    let problemCount: number = Number(Utility.getInputValue('problemCount'));
+    let factor: number = Number(Utility.getInputValue('factor'));
 
     newGame = new Game(player, problemCount, factor);
     newGame.displayGame();

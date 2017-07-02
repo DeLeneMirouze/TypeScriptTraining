@@ -35,7 +35,7 @@ class Game {
     
         // loop through the text boxes and calculate the number that are correct
         for (let i = 1; i <= this.problemCount; i++) {
-            let answer: number = Number(utility.getInputValue('answer' + i));
+            let answer: number = Number(Utility.getInputValue('answer' + i));
             if(i * this.factor === answer) {
                 score++;
             }
