@@ -1,11 +1,12 @@
 "use strict";
-var Utility = (function () {
-    function Utility() {
-    }
-    Utility.getInputValue = function (elementID) {
-        var inputElement = document.getElementById(elementID);
-        return inputElement.value;
-    };
-    return Utility;
-}());
+Object.defineProperty(exports, "__esModule", { value: true });
+function getInputValue(elementID) {
+    var inputElement = document.getElementById(elementID);
+    return inputElement.value;
+}
+exports.getValue = getInputValue;
+function logger(message) {
+    console.log(message);
+}
+exports.logger = logger;
 //# sourceMappingURL=utility.js.map

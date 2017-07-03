@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var ScoreBoard = (function () {
     function ScoreBoard() {
         this.results = [];
@@ -19,4 +20,5 @@ var ScoreBoard = (function () {
     };
     return ScoreBoard;
 }());
+exports.ScoreBoard = ScoreBoard;
 //# sourceMappingURL=scoreboard.js.map
